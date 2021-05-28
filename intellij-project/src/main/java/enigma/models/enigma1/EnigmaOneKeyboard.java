@@ -1,23 +1,26 @@
 package enigma.models.enigma1;
 
-import enigma.models.AbstractKeyboard;
+import enigma.components.Keyboard;
+import enigma.metadata.permittedcharacters.PermittedCharacters;
 import enigma.models.ModelType;
 
-public class EnigmaOneKeyboard extends AbstractKeyboard
+public class EnigmaOneKeyboard implements Keyboard
 {
+    private final PermittedCharacters permittedCharacters;
+
     public static EnigmaOneKeyboard modelOneKeyboard()
     {
-        return new EnigmaOneKeyboard(ModelType.ENIGMA_ONE);
+        return new EnigmaOneKeyboard(ModelType.ENIGMA_ONE.permittedCharacters);
     }
 
-    private EnigmaOneKeyboard(ModelType modelType)
+    private EnigmaOneKeyboard(PermittedCharacters permittedCharacters)
     {
-        super(modelType);
+        this.permittedCharacters = permittedCharacters;
     }
 
     @Override
     public char pressKey(char character) {
-        if (characterIsPermitted(character)){
+        if (permittedCharacters.characterIsPermitted(character)){
             return character;
         }
         else

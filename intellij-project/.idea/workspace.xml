@@ -5,24 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fecc4a9-3dbb-4587-9ce5-d29c497f2688" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enigma/components/Keyboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enigma/models/AbstractKeyboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enigma/models/ModelType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enigma/models/enigma1/EnigmaOneKeyboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/enigma/models/enigma1/EnigmaOneKeyboardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enigma/models/enigma1/CharacterSignal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enigma/models/enigma1/EnigmaOnePlugboardConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enigma/components/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enigma/components/Keyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enigma/models/AbstractKeyboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enigma/models/ModelType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enigma/models/ModelType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enigma/models/enigma1/EnigmaOneKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enigma/models/enigma1/EnigmaOneKeyboard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +23,22 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -81,37 +80,20 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="enigma.models" />
+      <recent name="enigma.components.plugboard" />
       <recent name="enigma.components" />
+      <recent name="enigma.metadata.permittedcharacters" />
+      <recent name="enigma.components.keyboard" />
+      <recent name="enigma.models" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="enigma.metadata.permittedcharacters" />
       <recent name="enigma.models.enigma1" />
       <recent name="enigma.components.keyboard" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EnigmaOneKeyboardTest">
-    <configuration name="EnigmaOneKeyboardTest.givenAValidCharacter_whenPressKey_thenCharacterIsReturned" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;enigma.models.enigma1.EnigmaOneKeyboardTest.givenAValidCharacter_whenPressKey_thenCharacterIsReturned&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="EnigmaOneKeyboardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.EnigmaOnePlugboardTest.givenPlugConfigurationContainingInvalidOutputCharacter_whenBuildPlugboard_thenIllegalArgumentExceptionThrown">
+    <configuration name="EnigmaOnePlugboardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jenigma-project.test" />
       <extension name="coverage">
         <pattern>
@@ -120,16 +102,83 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="enigma.models.enigma1" />
-      <option name="MAIN_CLASS_NAME" value="enigma.models.enigma1.EnigmaOneKeyboardTest" />
+      <option name="MAIN_CLASS_NAME" value="enigma.models.enigma1.EnigmaOnePlugboardTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnigmaOnePlugboardTest.givenPlugConfigurationContainingInvalidOutputCharacter_whenBuildPlugboard_thenIllegalArgumentExceptionThrown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jenigma-project.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="enigma.models.enigma1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="enigma.models.enigma1" />
+      <option name="MAIN_CLASS_NAME" value="enigma.models.enigma1.EnigmaOnePlugboardTest" />
+      <option name="METHOD_NAME" value="givenPlugConfigurationContainingInvalidOutputCharacter_whenBuildPlugboard_thenIllegalArgumentExceptionThrown" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnigmaOnePlugboardTest.givenPlugConfiguration_containingInvalidCharacter_whenBuildPlugboard_thenIllegalArgumentExceptionThrown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jenigma-project.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="enigma.models.enigma1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="enigma.models.enigma1" />
+      <option name="MAIN_CLASS_NAME" value="enigma.models.enigma1.EnigmaOnePlugboardTest" />
+      <option name="METHOD_NAME" value="givenPlugConfiguration_containingInvalidCharacter_whenBuildPlugboard_thenIllegalArgumentExceptionThrown" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnigmaOnePlugboardTest.givenPlugConfiguration_thatContainsCharacter_whenProcessCharacter_thenDifferentCharacterIsReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jenigma-project.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="enigma.models.enigma1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="enigma.models.enigma1" />
+      <option name="MAIN_CLASS_NAME" value="enigma.models.enigma1.EnigmaOnePlugboardTest" />
+      <option name="METHOD_NAME" value="givenPlugConfiguration_thatContainsCharacter_whenProcessCharacter_thenDifferentCharacterIsReturned" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnigmaOnePlugboardTest.givenTwoPlugConfigurationsThatReferenceTheSameOutputCharacter_whenBuildPlugboard_thenIllegalStateExceptionThrown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jenigma-project.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="enigma.models.enigma1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="enigma.models.enigma1" />
+      <option name="MAIN_CLASS_NAME" value="enigma.models.enigma1.EnigmaOnePlugboardTest" />
+      <option name="METHOD_NAME" value="givenTwoPlugConfigurationsThatReferenceTheSameOutputCharacter_whenBuildPlugboard_thenIllegalStateExceptionThrown" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EnigmaOneKeyboardTest" />
-        <item itemvalue="Gradle.EnigmaOneKeyboardTest.givenAValidCharacter_whenPressKey_thenCharacterIsReturned" />
+        <item itemvalue="JUnit.EnigmaOnePlugboardTest.givenPlugConfigurationContainingInvalidOutputCharacter_whenBuildPlugboard_thenIllegalArgumentExceptionThrown" />
+        <item itemvalue="JUnit.EnigmaOnePlugboardTest" />
+        <item itemvalue="JUnit.EnigmaOnePlugboardTest.givenPlugConfiguration_containingInvalidCharacter_whenBuildPlugboard_thenIllegalArgumentExceptionThrown" />
+        <item itemvalue="JUnit.EnigmaOnePlugboardTest.givenTwoPlugConfigurationsThatReferenceTheSameOutputCharacter_whenBuildPlugboard_thenIllegalStateExceptionThrown" />
+        <item itemvalue="JUnit.EnigmaOnePlugboardTest.givenPlugConfiguration_thatContainsCharacter_whenProcessCharacter_thenDifferentCharacterIsReturned" />
       </list>
     </recent_temporary>
   </component>
