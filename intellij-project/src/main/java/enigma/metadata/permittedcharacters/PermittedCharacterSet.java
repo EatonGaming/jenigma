@@ -21,9 +21,4 @@ public class PermittedCharacterSet implements PermittedCharacters {
             return permittedCharacters.contains(character);
         }
     }
-
-    @Override
-    public Set<Character> getPermittedCharactersAsSet() {
-        return permittedCharacters;
-    }
 }
