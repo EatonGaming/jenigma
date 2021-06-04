@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fecc4a9-3dbb-4587-9ce5-d29c497f2688" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/enigma/models/enigma1/CharacterSignal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enigma/models/enigma1/EnigmaOnePlugboardConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enigma/components/rotor/Rotor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enigma/metadata/rotorconfigurations/RotorCharacterConversionConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enigma/models/enigma1/EnigmaOnePlugboardBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enigma/models/enigma1/EnigmaOneRotor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enigma/models/enigma1/EnigmaOneRotorCharacterConversionConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enigma/models/enigma1/EnigmaOneRotorFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/enigma/metadata/rotorconfigurations/EnigmaOneRotorCharacterConversionConfigurationsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/enigma/models/enigma1/EnigmaOneRotorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enigma/components/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enigma/components/Keyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enigma/models/AbstractKeyboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enigma/components/plugboard/Plugboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enigma/components/Plugboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enigma/metadata/permittedcharacters/PermittedCharacterSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enigma/metadata/permittedcharacters/PermittedCharacterSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enigma/metadata/permittedcharacters/PermittedCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enigma/metadata/permittedcharacters/PermittedCharacters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/enigma/models/ModelType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enigma/models/ModelType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enigma/models/enigma1/EnigmaOneKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enigma/models/enigma1/EnigmaOneKeyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enigma/models/enigma1/EnigmaOnePlugboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enigma/models/enigma1/EnigmaOnePlugboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/enigma/metadata/permittedcharacters/PermittedCharacterSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/enigma/metadata/permittedcharacters/PermittedCharacterSetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/enigma/models/enigma1/EnigmaOnePlugboardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/enigma/models/enigma1/EnigmaOnePlugboardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +46,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
@@ -80,20 +90,24 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="enigma.components.plugboard" />
+      <recent name="enigma.models.enigma1" />
       <recent name="enigma.components" />
+      <recent name="enigma.components.plugboard" />
       <recent name="enigma.metadata.permittedcharacters" />
       <recent name="enigma.components.keyboard" />
-      <recent name="enigma.models" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="enigma.models.enigma1" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="enigma.metadata.permittedcharacters" />
+      <recent name="enigma.metadata.rotorconfigurations" />
       <recent name="enigma.models.enigma1" />
+      <recent name="enigma.metadata.permittedcharacters" />
       <recent name="enigma.components.keyboard" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EnigmaOnePlugboardTest.givenPlugConfigurationContainingInvalidOutputCharacter_whenBuildPlugboard_thenIllegalArgumentExceptionThrown">
-    <configuration name="EnigmaOnePlugboardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.enigma in jenigma-project.test">
+    <configuration name="EnigmaOneRotorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jenigma-project.test" />
       <extension name="coverage">
         <pattern>
@@ -102,13 +116,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="enigma.models.enigma1" />
-      <option name="MAIN_CLASS_NAME" value="enigma.models.enigma1.EnigmaOnePlugboardTest" />
+      <option name="MAIN_CLASS_NAME" value="enigma.models.enigma1.EnigmaOneRotorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EnigmaOnePlugboardTest.givenPlugConfigurationContainingInvalidOutputCharacter_whenBuildPlugboard_thenIllegalArgumentExceptionThrown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EnigmaOneRotorTest.givenEnigmaOneRotor_withRotorOneConfiguration_atFirstPosition_whenSendCharacterThrough_thenCharacterIsModifiedCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jenigma-project.test" />
       <extension name="coverage">
         <pattern>
@@ -117,14 +131,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="enigma.models.enigma1" />
-      <option name="MAIN_CLASS_NAME" value="enigma.models.enigma1.EnigmaOnePlugboardTest" />
-      <option name="METHOD_NAME" value="givenPlugConfigurationContainingInvalidOutputCharacter_whenBuildPlugboard_thenIllegalArgumentExceptionThrown" />
+      <option name="MAIN_CLASS_NAME" value="enigma.models.enigma1.EnigmaOneRotorTest" />
+      <option name="METHOD_NAME" value="givenEnigmaOneRotor_withRotorOneConfiguration_atFirstPosition_whenSendCharacterThrough_thenCharacterIsModifiedCorrectly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EnigmaOnePlugboardTest.givenPlugConfiguration_containingInvalidCharacter_whenBuildPlugboard_thenIllegalArgumentExceptionThrown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EnigmaOneRotorTest.givenEnigmaOneRotor_withRotorOneConfiguration_atThirdPosition_whenSendCharacterThrough_thenCharacterIsModifiedCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jenigma-project.test" />
       <extension name="coverage">
         <pattern>
@@ -133,14 +147,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="enigma.models.enigma1" />
-      <option name="MAIN_CLASS_NAME" value="enigma.models.enigma1.EnigmaOnePlugboardTest" />
-      <option name="METHOD_NAME" value="givenPlugConfiguration_containingInvalidCharacter_whenBuildPlugboard_thenIllegalArgumentExceptionThrown" />
+      <option name="MAIN_CLASS_NAME" value="enigma.models.enigma1.EnigmaOneRotorTest" />
+      <option name="METHOD_NAME" value="givenEnigmaOneRotor_withRotorOneConfiguration_atThirdPosition_whenSendCharacterThrough_thenCharacterIsModifiedCorrectly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EnigmaOnePlugboardTest.givenPlugConfiguration_thatContainsCharacter_whenProcessCharacter_thenDifferentCharacterIsReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EnigmaOneRotorTest.givenEnigmaOneRotor_withRotorOneConfiguration_whenGetCharacterAtCurrentPosition_thenCurrentPositionIsChangedToTheNextCharacter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jenigma-project.test" />
       <extension name="coverage">
         <pattern>
@@ -149,36 +163,34 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="enigma.models.enigma1" />
-      <option name="MAIN_CLASS_NAME" value="enigma.models.enigma1.EnigmaOnePlugboardTest" />
-      <option name="METHOD_NAME" value="givenPlugConfiguration_thatContainsCharacter_whenProcessCharacter_thenDifferentCharacterIsReturned" />
+      <option name="MAIN_CLASS_NAME" value="enigma.models.enigma1.EnigmaOneRotorTest" />
+      <option name="METHOD_NAME" value="givenEnigmaOneRotor_withRotorOneConfiguration_whenGetCharacterAtCurrentPosition_thenCurrentPositionIsChangedToTheNextCharacter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EnigmaOnePlugboardTest.givenTwoPlugConfigurationsThatReferenceTheSameOutputCharacter_whenBuildPlugboard_thenIllegalStateExceptionThrown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="enigma in jenigma-project.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jenigma-project.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="enigma.models.enigma1.*" />
+          <option name="PATTERN" value="enigma.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="enigma.models.enigma1" />
-      <option name="MAIN_CLASS_NAME" value="enigma.models.enigma1.EnigmaOnePlugboardTest" />
-      <option name="METHOD_NAME" value="givenTwoPlugConfigurationsThatReferenceTheSameOutputCharacter_whenBuildPlugboard_thenIllegalStateExceptionThrown" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="enigma" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EnigmaOnePlugboardTest.givenPlugConfigurationContainingInvalidOutputCharacter_whenBuildPlugboard_thenIllegalArgumentExceptionThrown" />
-        <item itemvalue="JUnit.EnigmaOnePlugboardTest" />
-        <item itemvalue="JUnit.EnigmaOnePlugboardTest.givenPlugConfiguration_containingInvalidCharacter_whenBuildPlugboard_thenIllegalArgumentExceptionThrown" />
-        <item itemvalue="JUnit.EnigmaOnePlugboardTest.givenTwoPlugConfigurationsThatReferenceTheSameOutputCharacter_whenBuildPlugboard_thenIllegalStateExceptionThrown" />
-        <item itemvalue="JUnit.EnigmaOnePlugboardTest.givenPlugConfiguration_thatContainsCharacter_whenProcessCharacter_thenDifferentCharacterIsReturned" />
+        <item itemvalue="JUnit.enigma in jenigma-project.test" />
+        <item itemvalue="JUnit.EnigmaOneRotorTest.givenEnigmaOneRotor_withRotorOneConfiguration_atThirdPosition_whenSendCharacterThrough_thenCharacterIsModifiedCorrectly" />
+        <item itemvalue="JUnit.EnigmaOneRotorTest.givenEnigmaOneRotor_withRotorOneConfiguration_atFirstPosition_whenSendCharacterThrough_thenCharacterIsModifiedCorrectly" />
+        <item itemvalue="JUnit.EnigmaOneRotorTest" />
+        <item itemvalue="JUnit.EnigmaOneRotorTest.givenEnigmaOneRotor_withRotorOneConfiguration_whenGetCharacterAtCurrentPosition_thenCurrentPositionIsChangedToTheNextCharacter" />
       </list>
     </recent_temporary>
   </component>
@@ -203,5 +215,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/jenigma_project$enigma_in_jenigma_project_test.ic" NAME="enigma in jenigma-project.test Coverage Results" MODIFIED="1622808841094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>enigma.*</FILTER>
+    </SUITE>
   </component>
 </project>

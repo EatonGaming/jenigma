@@ -1,4 +1,4 @@
-package enigma.components.plugboard;
+package enigma.components;
 
 public interface Plugboard
 {

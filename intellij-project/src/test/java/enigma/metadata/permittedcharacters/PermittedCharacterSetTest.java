@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.NullAndEmptySource;
 
+import java.util.List;
 import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -13,7 +14,7 @@ class PermittedCharacterSetTest
     @Test
     void givenCharacterThatExistsInPermittedCharacterSet_whenCharacterIsPermitted_thenReturnTrue()
     {
-        PermittedCharacterSet permittedCharacterSet = new PermittedCharacterSet(Set.of('A', 'B', 'C'));
+        PermittedCharacterSet permittedCharacterSet = new PermittedCharacterSet(List.of('A', 'B', 'C'));
 
         boolean result = permittedCharacterSet.characterIsPermitted('A');
 
@@ -23,7 +24,7 @@ class PermittedCharacterSetTest
     @Test
     void givenCharacterThatDoesNotExistInPermittedCharacterSet_whenCharacterIsPermitted_thenReturnTrue()
     {
-        PermittedCharacterSet permittedCharacterSet = new PermittedCharacterSet(Set.of('A', 'B', 'C'));
+        PermittedCharacterSet permittedCharacterSet = new PermittedCharacterSet(List.of('A', 'B', 'C'));
 
         boolean result = permittedCharacterSet.characterIsPermitted('J');
 
@@ -32,7 +33,7 @@ class PermittedCharacterSetTest
 
     @ParameterizedTest
     @NullAndEmptySource
-    void givenCharacterSetThatIsNullOrEmpty_whenCharacterIsPermitted_thenReturnFalse(Set<Character> permittedCharacters)
+    void givenCharacterSetThatIsNullOrEmpty_whenCharacterIsPermitted_thenReturnFalse(List<Character> permittedCharacters)
     {
         PermittedCharacterSet permittedCharacterSet = new PermittedCharacterSet(permittedCharacters);
 
